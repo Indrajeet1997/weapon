@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>BankApp</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LoginController</display-name>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.jeet.LoginController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>TransferController</display-name>
+		<servlet-name>TransferController</servlet-name>
+		<servlet-class>com.jeet.TransferController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>BalanceController</display-name>
+		<servlet-name>BalanceController</servlet-name>
+		<servlet-class>com.jeet.BalanceController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ChangePasswordController</display-name>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<servlet-class>com.jeet.ChangePasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TransferController</servlet-name>
+		<url-pattern>/TransferController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BalanceController</servlet-name>
+		<url-pattern>/BalanceController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<url-pattern>/ChangePasswordController</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Home.html</welcome-file>
+	</welcome-file-list>
+</web-app>
